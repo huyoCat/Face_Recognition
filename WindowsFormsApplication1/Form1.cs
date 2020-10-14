@@ -99,11 +99,11 @@ namespace WindowsFormsApplication1
             //this.pictureBox1.Image = Bitmap.FromFile(ImagePaths[nowCount]);
             Bitmap bitMap = new Bitmap(pictureBox1.Image);
             // 设置APPID/AK/SK
-            var API_KEY = "3USlfs0IEY92KNpbeedm1lp7";
-            var SECRET_KEY = "YpNKGlZ1SHeIFHIf6RHUvokHDetpnc9F";
+            var API_KEY = "你的API_KEY";
+            var SECRET_KEY = "你的SECRET_KEY";
             var client = new Face(API_KEY, SECRET_KEY);
             client.Timeout = 60000;  // 修改超时时间
-            client.AppId = "22778055";
+            client.AppId = "你的APPID";
             string guidName = Guid.NewGuid() + ".Jpeg";
             bitMap.Save(guidName, ImageFormat.Jpeg);
             var image = ReadImg(guidName);
@@ -142,11 +142,11 @@ namespace WindowsFormsApplication1
             Bitmap bitMap = new Bitmap(pictureBox1.Image);
             //CutPic(bitMap);
             // 设置APPID/AK/SK
-            var API_KEY = "3USlfs0IEY92KNpbeedm1lp7";
-            var SECRET_KEY = "YpNKGlZ1SHeIFHIf6RHUvokHDetpnc9F";
+            var API_KEY = "你的API_KEY";
+            var SECRET_KEY = "你的SECRET_KEY";
             var client = new Face(API_KEY, SECRET_KEY);
             client.Timeout = 60000;  // 修改超时时间
-            client.AppId = "22778055";
+            client.AppId = "你的AppId";
             string guidName = Guid.NewGuid() + ".Jpeg";
             bitMap.Save(guidName, ImageFormat.Jpeg);
             var image = ReadImg(guidName);
